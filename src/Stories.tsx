@@ -6,7 +6,7 @@ import Preview from "./Preview";
 
 const Stories = () => {
   const { value } = useLocalStorageContext();
-  const [state, setState] = useState({ show: true, storeIdx: 0 });
+  const [state, setState] = useState({ show: false, storeIdx: 0 });
 
   return (
     <div className="w-full">
