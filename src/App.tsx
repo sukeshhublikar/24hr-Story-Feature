@@ -2,7 +2,6 @@ import { createContext, useContext, useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Stories from "./Stories";
-import Preview from "./Preview";
 
 export interface ItemType {
   image: string;
@@ -49,7 +48,6 @@ function App() {
         <Header />
         <Stories />
       </div>
-      <Preview />
     </LocalStorageContext.Provider>
   );
 }

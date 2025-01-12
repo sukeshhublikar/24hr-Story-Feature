@@ -10,7 +10,6 @@ const ImageUpload = () => {
       if (files && files.length > 0) {
         const file = files[0];
         const reader = new FileReader();
-        debugger;
         reader.readAsDataURL(file); // Convert image to base64 string
         reader.onloadend = () => {
           if (!_.isNil(reader.result)) {
