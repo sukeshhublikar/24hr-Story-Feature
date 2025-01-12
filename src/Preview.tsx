@@ -12,7 +12,7 @@ const Preview = ({
   storyIdx: number;
 }) => {
   const { value } = useLocalStorageContext();
-  const [state, setState] = useState<{ idx: number | undefined }>({
+  const [state, setState] = useState<{ idx: number }>({
     idx: storyIdx || 0,
   });
 
@@ -23,6 +23,7 @@ const Preview = ({
           onClose();
           return prev;
         }
+
         return { ...prev, idx: prev.idx + 1 };
       });
     }, 3000);
